@@ -1,0 +1,73 @@
+#main-images-container {
+  height: 500px;
+
+  .image-container {
+
+    .image {
+      background-position: center;
+      background-size: cover;
+      position: absolute;
+      z-index: -1;
+      height: 500px;
+      width: 130%;
+      @include animation(move_image 15s ease 0s infinite alternate);
+
+      .color-overlay {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background-color: $blue
+      }
+    }
+
+    &:last-of-type {
+      @include animation(hide_image 8s linear 5s infinite alternate);
+    }
+  }
+
+  .main-info-container {
+    text-align: center;
+    margin-top: 150px;
+
+    h2 {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 70px;
+      letter-spacing: -6px;
+      color: $off-white;
+      font-weight: 200;
+
+      span {
+        font-weight: 700;
+        color: $green;
+      }
+    }
+
+    p {
+      font-size: 30px;
+      padding: 0 10%;
+      font-weight: 200;
+      color: $light-green;
+      line-height: 28px;
+    }
+  }
+}
+
+@include keyframes(move_image) {
+  from {
+    @include transform(translate(0, 0));
+  }
+  to {
+    @include transform(translate(-10%, 0));
+  }
+}
+
+
+@include keyframes(hide_image) {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

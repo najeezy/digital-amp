@@ -1,0 +1,37 @@
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+       -o-transition: $args;
+          transition: $args;
+}
+
+@mixin background-gradient($args...) {
+  background: -webkit-linear-gradient($args);
+  background: -o-linear-gradient($args);
+  background: -moz-linear-gradient($args);
+  background: linear-gradient($args);
+}
+
+
+@mixin transform($type) {
+  -ms-transform: $type;
+  -webkit-transform: $type;
+  -moz-transform: $type;
+  transform: $type;
+}
+
+
+@mixin animation($args...) {
+  -webkit-animation: $args;
+     -moz-animation: $args;
+       -o-animation: $args;
+          animation: $args;
+}
+/* move_eye 4s linear 0s infinite alternate; */
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content; }
+     @-moz-keyframes #{$name} { @content; }
+       @-o-keyframes #{$name} { @content; }
+          @keyframes #{$name} { @content; }
+}

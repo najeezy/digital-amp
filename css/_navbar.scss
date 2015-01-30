@@ -1,0 +1,85 @@
+nav.navbar {
+  background-color: transparent;
+  padding: 0 20px;
+  margin: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-radius: 0;
+  @include transition(background-color 0.5s);
+
+  .navbar-header {
+
+    a {
+      margin: 10px 0;
+      font-weight: 300;
+      font-size: 35px;
+      letter-spacing: -3px;
+      color: $off-white;
+      @include transition(color 0.3s, letter-spacing 0.5s);
+
+      span {
+        color: $green;
+        font-weight: 700;
+        font-size: 42px;
+        @include transition(color 0.3s)
+      }
+
+      &:hover, &:focus {
+        color: white;
+        letter-spacing: -2px;
+
+        span {
+          color: $light-green;
+        }
+      }
+    }
+  }
+
+  ul.nav {
+    margin-right: 10px;
+
+    li {
+      text-align: center;
+      width: 100px;
+      border-left: 1px solid $transparent-white;
+
+      &:last-child {
+        border-right: 1px solid $transparent-white;
+      }
+
+      a {
+        padding: 25px 0;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: $off-white;
+        @include transition(background-color 0.3s, letter-spacing 0.3s, color 0.3s);
+
+        &:hover, &:focus {
+          color: white;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+
+
+nav.scrolled {
+  background-color: $black;
+  border: none;
+
+  ul.nav {
+    li {
+      border-left: 1px solid $dark-gray;
+
+      &:last-child {
+        border-right: 1px solid $dark-gray;
+      }
+
+      a {
+        &:hover, &:focus {
+          background-color: $dark-gray;
+        }
+      }
+    }
+  }
+}
