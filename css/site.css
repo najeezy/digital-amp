@@ -71,9 +71,9 @@ nav.scrolled {
     nav.scrolled ul.nav li a:hover, nav.scrolled ul.nav li a:focus {
       background-color: #374140; }
 
-#main-images-container {
+#intro-container {
   height: 500px; }
-  #main-images-container .image-container .image {
+  #intro-container .image-container .image {
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -84,30 +84,30 @@ nav.scrolled {
     -moz-animation: move_image 15s ease 0s infinite alternate;
     -o-animation: move_image 15s ease 0s infinite alternate;
     animation: move_image 15s ease 0s infinite alternate; }
-    #main-images-container .image-container .image .color-overlay {
+    #intro-container .image-container .image .color-overlay {
       width: 100%;
       height: 100%;
       opacity: 0.8;
       background-color: #225378; }
-  #main-images-container .image-container:last-of-type {
+  #intro-container .image-container:last-of-type {
     -webkit-animation: hide_image 8s linear 5s infinite alternate;
     -moz-animation: hide_image 8s linear 5s infinite alternate;
     -o-animation: hide_image 8s linear 5s infinite alternate;
     animation: hide_image 8s linear 5s infinite alternate; }
-  #main-images-container .main-info-container {
+  #intro-container .main-info-container {
     text-align: center;
     margin-top: 150px; }
-    #main-images-container .main-info-container h2 {
+    #intro-container .main-info-container h2 {
       margin: 0;
       margin-bottom: 10px;
       font-size: 70px;
       letter-spacing: -6px;
       color: #D5D5E3;
       font-weight: 200; }
-      #main-images-container .main-info-container h2 span {
+      #intro-container .main-info-container h2 span {
         font-weight: 700;
         color: #08C400; }
-    #main-images-container .main-info-container p {
+    #intro-container .main-info-container p {
       font-size: 30px;
       padding: 0 10%;
       font-weight: 200;

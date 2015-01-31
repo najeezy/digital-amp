@@ -10,10 +10,10 @@ html, body {
   }
 }
 
-@import "variables";
-@import "mixins";
-@import "navbar";
-@import "image_carousel";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/navbar";
+@import "partials/image_carousel";
 
 .hide {
   display: none;
