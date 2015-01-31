@@ -71,14 +71,14 @@ nav.scrolled {
     nav.scrolled ul.nav li a:hover, nav.scrolled ul.nav li a:focus {
       background-color: #374140; }
 
-#main-images-container {
+#intro-container {
   height: 700px; }
-  #main-images-container .image-container:last-of-type {
+  #intro-container .image-container:last-of-type {
     -webkit-animation: hide_image 8s linear 5s infinite alternate;
     -moz-animation: hide_image 8s linear 5s infinite alternate;
     -o-animation: hide_image 8s linear 5s infinite alternate;
     animation: hide_image 8s linear 5s infinite alternate; }
-  #main-images-container .image-container .image {
+  #intro-container .image-container .image {
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -89,7 +89,7 @@ nav.scrolled {
     -moz-animation: move_image 15s ease 0s infinite alternate;
     -o-animation: move_image 15s ease 0s infinite alternate;
     animation: move_image 15s ease 0s infinite alternate; }
-    #main-images-container .image-container .image .color-overlay {
+    #intro-container .image-container .image .color-overlay {
       width: 100%;
       height: 100%;
       opacity: 0.8;
