@@ -1,14 +1,18 @@
 #main-images-container {
-  height: 500px;
+  height: 700px;
 
   .image-container {
+
+    &:last-of-type {
+      @include animation(hide_image 8s linear 5s infinite alternate);
+    }
 
     .image {
       background-position: center;
       background-size: cover;
       position: absolute;
       z-index: -1;
-      height: 500px;
+      height: 700px;
       width: 130%;
       @include animation(move_image 15s ease 0s infinite alternate);
 
@@ -19,37 +23,35 @@
         background-color: $blue
       }
     }
+  }
 
-    &:last-of-type {
-      @include animation(hide_image 8s linear 5s infinite alternate);
+}
+
+.main-info-container {
+  text-align: center;
+  top: 240px;
+  position: absolute;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 70px;
+    letter-spacing: -6px;
+    color: $off-white;
+    font-weight: 200;
+
+    span {
+      font-weight: 700;
+      color: $green;
     }
   }
 
-  .main-info-container {
-    text-align: center;
-    margin-top: 150px;
-
-    h2 {
-      margin: 0;
-      margin-bottom: 10px;
-      font-size: 70px;
-      letter-spacing: -6px;
-      color: $off-white;
-      font-weight: 200;
-
-      span {
-        font-weight: 700;
-        color: $green;
-      }
-    }
-
-    p {
-      font-size: 30px;
-      padding: 0 10%;
-      font-weight: 200;
-      color: $light-green;
-      line-height: 28px;
-    }
+  p {
+    font-size: 30px;
+    padding: 0 10%;
+    font-weight: 200;
+    color: $light-green;
+    line-height: 28px;
   }
 }
 
