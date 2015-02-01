@@ -40,7 +40,7 @@ nav.navbar {
 
     li {
       text-align: center;
-      width: 100px;
+      min-width: 115px;
       border-left: 1px solid $transparent-white;
 
       &:last-child {
@@ -71,6 +71,7 @@ nav.scrolled {
 
   ul.nav {
     li {
+      min-width: 115px;
       border-left: 1px solid $dark-gray;
 
       &:last-child {

@@ -1,22 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 
-html, body {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/navbar";
 @import "partials/image_carousel";
 @import "partials/icons";
 @import "partials/strategy";
+@import "partials/services";
+@import "partials/team";
+@import "partials/shared";
 
+
+html, body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 .hide {
   display: none;
-}
-
-.container.main-content {
-  width: 100%;
-  padding: 0;
 }
