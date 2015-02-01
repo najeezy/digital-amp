@@ -4,6 +4,7 @@ html
     meta(charset="UTF-8")
     title digitalAMP
     link(rel="stylesheet", href="css/vendor/bootstrap.min.css")
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="css/site.css")
   body
     nav.navbar.navbar-default.navbar-fixed-top.not-scrolled
@@ -33,16 +34,37 @@ html
         span AMP
       p A turn-key digital solution for your business's web and mobile advertising and marketing needs.
 
-    section.icons.col-md-12
+    section.icons.row
+      h2.text-center#icon-header What We Do
       figure.col-md-4.text-center.one
-        img(src="images/advertising.svg")
+        img#adversiting-image(src="images/advertising.svg")
         h2 Advertising
       figure.col-md-4.text-center.two
-        img(src="images/marketing.svg")
+        img#marketing-image(src="images/marketing.svg")
         h2 Marketing
       figure.col-md-4.text-center.three
-        img(src="images/promotions.svg")
+        img#promotion-image(src="images/promotions.svg")
         h2 Promotions
+    
+    section.strategy.row
+      div.content.col-md-6
+        h2 Our Strategy
+        ul
+          li 
+            i.fa.fa-angle-right
+            text Quality
+          li 
+            i.fa.fa-angle-right
+            text Research
+          li 
+            i.fa.fa-angle-right
+            text Language
+          li 
+            i.fa.fa-angle-right
+            text Engagement
+      div.strategy-image.col-md-6
+        
+    
 
     
   script(src="js/vendor/jquery-1.11.2.min.js")

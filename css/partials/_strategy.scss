@@ -1,0 +1,24 @@
+.strategy {
+
+  height: 400px;
+  padding: 80px;
+  background: $blue-gray;
+  color: white;
+
+  .content {
+    h2 {
+      font-size: 55px;
+    }
+
+    ul {
+      list-style-type: none;
+      font-size: 26px;
+    }
+
+    text {
+      margin-left: 10px;
+    }
+
+  }
+
+}

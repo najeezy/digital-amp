@@ -3,33 +3,32 @@
   margin: 0 auto;
   width: 80%;
   padding: 100px 0;
+
+  h2#icon-header {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
   figure {
     img {
-      width: 50%;
+      width: 70%;
       height: auto;
       border-radius: 100%;
-      padding: 28px;
-
-      &:first-of-type {
-      }
-
-      &:nth-of-type(2) {
-      }
-
-      &:last-of-type {
-      }
     }
 
     &.one img {
       background-color: #91AA9D;
+      padding: 20px 30px 20px 20px;
     }
 
     &.two img {
-      background-color: #3E606F;
+      background-color: $blue-gray;
+      padding: 20px 20px 20px 30px;
     }
 
     &.three img {
       background-color: #193441;
+      padding: 27px 27px 27px 30px;
     }
   }
 }
