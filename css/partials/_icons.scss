@@ -4,32 +4,23 @@
   width: 80%;
   padding: 100px 0;
   figure {
+
+    h2 {
+      letter-spacing: -1px;
+      font-size: 30px;
+
+      span {
+        font-size: 40px;
+        color: $green;
+      }
+    }
+
     img {
-      width: 50%;
+      width: 80%;
       height: auto;
       border-radius: 100%;
       padding: 28px;
-
-      &:first-of-type {
-      }
-
-      &:nth-of-type(2) {
-      }
-
-      &:last-of-type {
-      }
-    }
-
-    &.one img {
-      background-color: #91AA9D;
-    }
-
-    &.two img {
-      background-color: #3E606F;
-    }
-
-    &.three img {
-      background-color: #193441;
+      background-color: #225378;
     }
   }
 }

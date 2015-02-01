@@ -207,17 +207,18 @@ nav.scrolled {
   margin: 0 auto;
   width: 80%;
   padding: 100px 0; }
+  .icons figure h2 {
+    letter-spacing: -1px;
+    font-size: 30px; }
+    .icons figure h2 span {
+      font-size: 40px;
+      color: #08c400; }
   .icons figure img {
-    width: 50%;
+    width: 80%;
     height: auto;
     border-radius: 100%;
-    padding: 28px; }
-  .icons figure.one img {
-    background-color: #91AA9D; }
-  .icons figure.two img {
-    background-color: #3E606F; }
-  .icons figure.three img {
-    background-color: #193441; }
+    padding: 28px;
+    background-color: #225378; }
 
 .hide {
   display: none; }
