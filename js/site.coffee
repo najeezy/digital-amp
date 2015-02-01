@@ -1,13 +1,7 @@
 $ ->
   orderImages()
-  $(window).on 'scroll', ->
-    if $(window).scrollTop() > 200
-      $nav = $ 'nav:first'
-      $nav.addClass 'scrolled'
-    else
-      $nav = $ 'nav:first'
-      $nav.removeClass 'scrolled'
-
+  $(window).on 'scroll', darkenNavbar
+  $('.navbar a').on 'click', scrollToSection
 
   $('.strategy li').on 'click', 'h3', (e) ->
     $icon = $(e.delegateTarget).find 'i'
@@ -23,3 +17,14 @@ orderImages = ->
   setInterval ->
     $('.image-container:last').prependTo('#intro-container')
   , 15000
+
+darkenNavbar = (event) ->
+  if $(window).scrollTop() > 200
+    $nav = $ 'nav:first'
+    $nav.addClass 'scrolled'
+  else
+    $nav = $ 'nav:first'
+    $nav.removeClass 'scrolled'
+
+scrollToSection = (event) ->
+  target = $ this.hash if this.hash

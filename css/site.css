@@ -14,18 +14,18 @@ nav.navbar {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
   nav.navbar .navbar-header a {
-    text-shadow: #2A2C2B 0 2px;
+    text-shadow: #2a2c2b 0 2px;
     margin: 10px 0;
     font-weight: 300;
     font-size: 35px;
     letter-spacing: -3px;
-    color: #D5D5E3;
+    color: #d5d5e3;
     -webkit-transition: color 0.3s, letter-spacing 0.5s;
     -moz-transition: color 0.3s, letter-spacing 0.5s;
     -o-transition: color 0.3s, letter-spacing 0.5s;
     transition: color 0.3s, letter-spacing 0.5s; }
     nav.navbar .navbar-header a span {
-      color: #08C400;
+      color: #08c400;
       font-weight: 700;
       font-size: 42px;
       -webkit-transition: color 0.3s;
@@ -36,7 +36,7 @@ nav.navbar {
       color: white;
       letter-spacing: -2px; }
       nav.navbar .navbar-header a:hover span, nav.navbar .navbar-header a:focus span {
-        color: #08E900; }
+        color: #08e900; }
   nav.navbar ul.nav {
     margin-right: 10px; }
     nav.navbar ul.nav li {
@@ -46,11 +46,11 @@ nav.navbar {
       nav.navbar ul.nav li:last-child {
         border-right: 1px solid rgba(255, 255, 255, 0.2); }
       nav.navbar ul.nav li a {
-        text-shadow: #2A2C2B 0 2px;
+        text-shadow: #2a2c2b 0 2px;
         padding: 25px 0;
         font-size: 15px;
         letter-spacing: 1px;
-        color: #D5D5E3;
+        color: #d5d5e3;
         -webkit-transition: background-color 0.3s, letter-spacing 0.3s, color 0.3s;
         -moz-transition: background-color 0.3s, letter-spacing 0.3s, color 0.3s;
         -o-transition: background-color 0.3s, letter-spacing 0.3s, color 0.3s;
@@ -60,7 +60,7 @@ nav.navbar {
           letter-spacing: 2px; }
 
 nav.scrolled {
-  background-color: #1E1E20;
+  background-color: #1e1e20;
   border: none; }
   nav.scrolled ul.nav li {
     border-left: 1px solid #374140; }
@@ -104,22 +104,22 @@ nav.scrolled {
   left: 50%;
   top: 240px; }
   .main-info-container h2 {
-    text-shadow: #2A2C2B 0 2px;
+    text-shadow: #2a2c2b 0 2px;
     margin: 0;
     margin-bottom: 10px;
     font-size: 70px;
     letter-spacing: -6px;
-    color: #D5D5E3;
+    color: #d5d5e3;
     font-weight: 200; }
     .main-info-container h2 span {
       font-weight: 700;
-      color: #08C400; }
+      color: #08c400; }
   .main-info-container p {
-    text-shadow: #2A2C2B 0 2px;
+    text-shadow: #2a2c2b 0 2px;
     font-size: 30px;
     padding: 0 10%;
     font-weight: 200;
-    color: #08E900;
+    color: #08e900;
     line-height: 28px; }
 
 @-webkit-keyframes move_image {
@@ -128,64 +128,80 @@ nav.scrolled {
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
     transform: translate(0, 0); }
+
   to {
     -ms-transform: translate(-10%, 0);
     -webkit-transform: translate(-10%, 0);
     -moz-transform: translate(-10%, 0);
     transform: translate(-10%, 0); } }
+
 @-moz-keyframes move_image {
   from {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
     transform: translate(0, 0); }
+
   to {
     -ms-transform: translate(-10%, 0);
     -webkit-transform: translate(-10%, 0);
     -moz-transform: translate(-10%, 0);
     transform: translate(-10%, 0); } }
+
 @-o-keyframes move_image {
   from {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
     transform: translate(0, 0); }
+
   to {
     -ms-transform: translate(-10%, 0);
     -webkit-transform: translate(-10%, 0);
     -moz-transform: translate(-10%, 0);
     transform: translate(-10%, 0); } }
+
 @keyframes move_image {
   from {
     -ms-transform: translate(0, 0);
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
     transform: translate(0, 0); }
+
   to {
     -ms-transform: translate(-10%, 0);
     -webkit-transform: translate(-10%, 0);
     -moz-transform: translate(-10%, 0);
     transform: translate(-10%, 0); } }
+
 @-webkit-keyframes hide_image {
   from {
     opacity: 1; }
+
   to {
     opacity: 0; } }
+
 @-moz-keyframes hide_image {
   from {
     opacity: 1; }
+
   to {
     opacity: 0; } }
+
 @-o-keyframes hide_image {
   from {
     opacity: 1; }
+
   to {
     opacity: 0; } }
+
 @keyframes hide_image {
   from {
     opacity: 1; }
+
   to {
     opacity: 0; } }
+
 .icons {
   float: none;
   margin: 0 auto;
@@ -202,7 +218,7 @@ nav.scrolled {
     background-color: #6f9280;
     padding: 20px 30px 20px 20px; }
   .icons figure.two img {
-    background-color: #3E606F;
+    background-color: #3e606f;
     padding: 20px 20px 20px 30px; }
   .icons figure.three img {
     background-color: #193441;
@@ -212,7 +228,7 @@ nav.scrolled {
     font-size: 30px; }
     .icons figure h2 span {
       font-size: 40px;
-      color: #08C400; }
+      color: #08c400; }
   .icons figure img {
     width: 80%;
     height: auto;
@@ -220,10 +236,25 @@ nav.scrolled {
     padding: 28px;
     background-color: #225378; }
 
+/* &.one img {
+  background-color: #6f9280;
+  padding: 20px 30px 20px 20px;
+}
+
+&.two img {
+  background-color: \$blue-gray;
+  padding: 20px 20px 20px 30px;
+}
+
+&.three img {
+  background-color: #193441;
+  padding: 27px 27px 27px 30px;
+}
+ */
 .strategy {
   height: 400px;
   padding: 80px;
-  background: #3E606F;
+  background: #3e606f;
   color: white; }
   .strategy .content h2 {
     font-size: 55px; }
@@ -235,7 +266,7 @@ nav.scrolled {
       display: inline; }
       .strategy .content ul li h3:hover {
         cursor: pointer;
-        color: #08E900;
+        color: #08e900;
         transition: color 0.5s ease; }
     .strategy .content ul li text {
       display: block;
@@ -250,5 +281,3 @@ nav.scrolled {
 .container.main-content {
   width: 100%;
   padding: 0; }
-
-/*# sourceMappingURL=site.css.map */
