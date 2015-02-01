@@ -27,6 +27,9 @@ darkenNavbar = (event) ->
     $nav.removeClass 'scrolled'
 
 scrollToSection = (event) ->
+  event.preventDefault()
   target = $ this.hash if this.hash
 
-  
+  $('html, body').animate
+    scrollTop: target.offset().top
+  , 500

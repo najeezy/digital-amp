@@ -38,9 +38,13 @@
 
   scrollToSection = function(event) {
     var target;
+    event.preventDefault();
     if (this.hash) {
-      return target = $(this.hash);
+      target = $(this.hash);
     }
+    return $('html, body').animate({
+      scrollTop: target.offset().top
+    }, 500);
   };
 
 }).call(this);

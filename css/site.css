@@ -209,7 +209,8 @@ nav.scrolled {
   padding: 100px 0; }
   .icons h2#icon-header {
     font-size: 60px;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-weight: 200; }
   .icons figure h2 {
     margin-bottom: 20px; }
   .icons figure img {
@@ -227,7 +228,8 @@ nav.scrolled {
     padding: 27px 27px 27px 30px; }
   .icons figure h2 {
     letter-spacing: -1px;
-    font-size: 30px; }
+    font-size: 30px;
+    font-weight: 200; }
     .icons figure h2 span {
       font-size: 40px;
       color: #08c400; }
@@ -259,7 +261,9 @@ nav.scrolled {
   background: #3e606f;
   color: white; }
   .strategy .content h2 {
-    font-size: 55px; }
+    font-size: 55px;
+    font-weight: 200;
+    letter-spacing: -2px; }
   .strategy .content ul {
     list-style-type: none;
     font-size: 26px; }
