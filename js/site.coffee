@@ -28,3 +28,5 @@ darkenNavbar = (event) ->
 
 scrollToSection = (event) ->
   target = $ this.hash if this.hash
+
+  

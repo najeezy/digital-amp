@@ -210,6 +210,8 @@ nav.scrolled {
   .icons h2#icon-header {
     font-size: 60px;
     margin-bottom: 40px; }
+  .icons figure h2 {
+    margin-bottom: 20px; }
   .icons figure img {
     width: 70%;
     height: auto;
@@ -261,6 +263,9 @@ nav.scrolled {
   .strategy .content ul {
     list-style-type: none;
     font-size: 26px; }
+    .strategy .content ul li i {
+      height: 26px;
+      width: 20px; }
     .strategy .content ul li h3 {
       margin-left: 10px;
       display: inline; }
