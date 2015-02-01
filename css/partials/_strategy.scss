@@ -13,12 +13,34 @@
     ul {
       list-style-type: none;
       font-size: 26px;
-    }
 
-    text {
-      margin-left: 10px;
-    }
+      li {
 
+        h3 {
+          margin-left: 10px;
+          display: inline;
+
+          &:hover {
+            cursor: pointer;
+            color: $light-green;
+            transition: color 0.5s ease;
+          }
+
+        }
+
+        text {
+          display: block;
+          font-size: 16px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+
+  .strategy-image {
+    img {
+      max-width: 500px;
+    }
   }
 
 }

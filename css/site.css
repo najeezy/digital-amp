@@ -199,7 +199,7 @@ nav.scrolled {
     height: auto;
     border-radius: 100%; }
   .icons figure.one img {
-    background-color: #91AA9D;
+    background-color: #6f9280;
     padding: 20px 30px 20px 20px; }
   .icons figure.two img {
     background-color: #3E606F;
@@ -207,6 +207,18 @@ nav.scrolled {
   .icons figure.three img {
     background-color: #193441;
     padding: 27px 27px 27px 30px; }
+  .icons figure h2 {
+    letter-spacing: -1px;
+    font-size: 30px; }
+    .icons figure h2 span {
+      font-size: 40px;
+      color: #08C400; }
+  .icons figure img {
+    width: 80%;
+    height: auto;
+    border-radius: 100%;
+    padding: 28px;
+    background-color: #225378; }
 
 .strategy {
   height: 400px;
@@ -218,8 +230,19 @@ nav.scrolled {
   .strategy .content ul {
     list-style-type: none;
     font-size: 26px; }
-  .strategy .content text {
-    margin-left: 10px; }
+    .strategy .content ul li h3 {
+      margin-left: 10px;
+      display: inline; }
+      .strategy .content ul li h3:hover {
+        cursor: pointer;
+        color: #08E900;
+        transition: color 0.5s ease; }
+    .strategy .content ul li text {
+      display: block;
+      font-size: 16px;
+      font-weight: 200; }
+  .strategy .strategy-image img {
+    max-width: 500px; }
 
 .hide {
   display: none; }
