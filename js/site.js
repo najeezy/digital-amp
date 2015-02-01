@@ -6,7 +6,6 @@
     orderImages();
     return $(window).on('scroll', function() {
       var $nav;
-      console.log('I got in here');
       if ($(window).scrollTop() > 200) {
         $nav = $('nav:first');
         return $nav.addClass('scrolled');
@@ -19,8 +18,8 @@
 
   orderImages = function() {
     return setInterval(function() {
-      return $('.image-container:last').prependTo('#main-images-container');
-    }, 13000);
+      return $('.image-container:last').prependTo('#intro-container');
+    }, 15000);
   };
 
 }).call(this);

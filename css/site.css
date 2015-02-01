@@ -1,10 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 html, body {
   font-family: 'Roboto Condensed', sans-serif; }
-  html .main-content-container, body .main-content-container {
-    max-width: 100%;
-    position: relative;
-    overflow-x: hidden !important; }
 
 /* move_eye 4s linear 0s infinite alternate; */
 nav.navbar {
@@ -18,6 +14,7 @@ nav.navbar {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s; }
   nav.navbar .navbar-header a {
+    text-shadow: #2a2c2b 0 2px;
     margin: 10px 0;
     font-weight: 300;
     font-size: 35px;
@@ -49,6 +46,7 @@ nav.navbar {
       nav.navbar ul.nav li:last-child {
         border-right: 1px solid rgba(255, 255, 255, 0.2); }
       nav.navbar ul.nav li a {
+        text-shadow: #2a2c2b 0 2px;
         padding: 25px 0;
         font-size: 15px;
         letter-spacing: 1px;
@@ -72,12 +70,15 @@ nav.scrolled {
       background-color: #374140; }
 
 #intro-container {
-  height: 700px; }
+  height: 700px;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden !important; }
   #intro-container .image-container:last-of-type {
-    -webkit-animation: hide_image 8s linear 5s infinite alternate;
-    -moz-animation: hide_image 8s linear 5s infinite alternate;
-    -o-animation: hide_image 8s linear 5s infinite alternate;
-    animation: hide_image 8s linear 5s infinite alternate; }
+    -webkit-animation: hide_image 8s linear 7s infinite alternate;
+    -moz-animation: hide_image 8s linear 7s infinite alternate;
+    -o-animation: hide_image 8s linear 7s infinite alternate;
+    animation: hide_image 8s linear 7s infinite alternate; }
   #intro-container .image-container .image {
     background-position: center;
     background-size: cover;
@@ -85,10 +86,10 @@ nav.scrolled {
     z-index: -1;
     height: 700px;
     width: 130%;
-    -webkit-animation: move_image 15s ease 0s infinite alternate;
-    -moz-animation: move_image 15s ease 0s infinite alternate;
-    -o-animation: move_image 15s ease 0s infinite alternate;
-    animation: move_image 15s ease 0s infinite alternate; }
+    -webkit-animation: move_image 13s ease 0s infinite alternate;
+    -moz-animation: move_image 13s ease 0s infinite alternate;
+    -o-animation: move_image 13s ease 0s infinite alternate;
+    animation: move_image 13s ease 0s infinite alternate; }
     #intro-container .image-container .image .color-overlay {
       width: 100%;
       height: 100%;
@@ -97,9 +98,13 @@ nav.scrolled {
 
 .main-info-container {
   text-align: center;
-  top: 240px;
-  position: absolute; }
+  position: absolute;
+  width: 668px;
+  margin-left: -334px;
+  left: 50%;
+  top: 240px; }
   .main-info-container h2 {
+    text-shadow: #2a2c2b 0 2px;
     margin: 0;
     margin-bottom: 10px;
     font-size: 70px;
@@ -110,6 +115,7 @@ nav.scrolled {
       font-weight: 700;
       color: #08c400; }
   .main-info-container p {
+    text-shadow: #2a2c2b 0 2px;
     font-size: 30px;
     padding: 0 10%;
     font-weight: 200;
@@ -195,6 +201,23 @@ nav.scrolled {
 
   to {
     opacity: 0; } }
+
+.icons {
+  float: none;
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 0; }
+  .icons figure img {
+    width: 50%;
+    height: auto;
+    border-radius: 100%;
+    padding: 28px; }
+  .icons figure.one img {
+    background-color: #91AA9D; }
+  .icons figure.two img {
+    background-color: #3E606F; }
+  .icons figure.three img {
+    background-color: #193441; }
 
 .hide {
   display: none; }

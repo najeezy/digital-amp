@@ -1,11 +1,13 @@
 #intro-container {
   height: 700px;
-
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden !important;
 
   .image-container {
 
     &:last-of-type {
-      @include animation(hide_image 8s linear 5s infinite alternate);
+      @include animation(hide_image 8s linear 7s infinite alternate);
     }
 
     .image {
@@ -15,7 +17,7 @@
       z-index: -1;
       height: 700px;
       width: 130%;
-      @include animation(move_image 15s ease 0s infinite alternate);
+      @include animation(move_image 13s ease 0s infinite alternate);
 
       .color-overlay {
         width: 100%;
@@ -30,10 +32,14 @@
 
 .main-info-container {
   text-align: center;
-  top: 240px;
   position: absolute;
+  width: 668px;
+  margin-left: -334px;
+  left: 50%;
+  top: 240px;
 
   h2 {
+    text-shadow: $off-black 0 2px;
     margin: 0;
     margin-bottom: 10px;
     font-size: 70px;
@@ -48,6 +54,7 @@
   }
 
   p {
+    text-shadow: $off-black 0 2px;
     font-size: 30px;
     padding: 0 10%;
     font-weight: 200;

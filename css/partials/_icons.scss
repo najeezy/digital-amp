@@ -1,0 +1,35 @@
+.icons {
+  float: none;
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 0;
+  figure {
+    img {
+      width: 50%;
+      height: auto;
+      border-radius: 100%;
+      padding: 28px;
+
+      &:first-of-type {
+      }
+
+      &:nth-of-type(2) {
+      }
+
+      &:last-of-type {
+      }
+    }
+
+    &.one img {
+      background-color: #91AA9D;
+    }
+
+    &.two img {
+      background-color: #3E606F;
+    }
+
+    &.three img {
+      background-color: #193441;
+    }
+  }
+}

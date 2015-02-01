@@ -9,6 +9,7 @@ nav.navbar {
   .navbar-header {
 
     a {
+      text-shadow: $off-black 0 2px;
       margin: 10px 0;
       font-weight: 300;
       font-size: 35px;
@@ -47,6 +48,7 @@ nav.navbar {
       }
 
       a {
+        text-shadow: $off-black 0 2px;
         padding: 25px 0;
         font-size: 15px;
         letter-spacing: 1px;

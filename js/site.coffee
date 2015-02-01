@@ -1,7 +1,6 @@
 $ ->
   orderImages()
   $(window).on 'scroll', ->
-    console.log 'I got in here'
     if $(window).scrollTop() > 200
       $nav = $ 'nav:first'
       $nav.addClass 'scrolled'
@@ -11,5 +10,5 @@ $ ->
 
 orderImages = ->
   setInterval ->
-    $('.image-container:last').prependTo('#main-images-container')
-  , 13000
+    $('.image-container:last').prependTo('#intro-container')
+  , 15000

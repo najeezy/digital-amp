@@ -2,18 +2,13 @@
 
 html, body {
   font-family: 'Roboto Condensed', sans-serif;
-
-  .main-content-container {
-    max-width: 100%;
-    position: relative;
-    overflow-x: hidden !important;
-  }
 }
 
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/navbar";
 @import "partials/image_carousel";
+@import "partials/icons";
 
 .hide {
   display: none;
