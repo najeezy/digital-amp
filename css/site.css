@@ -1,7 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
-html, body {
-  font-family: 'Roboto Condensed', sans-serif; }
-
 /* move_eye 4s linear 0s infinite alternate; */
 nav.navbar {
   background-color: transparent;
@@ -32,7 +29,7 @@ nav.navbar {
     margin-right: 10px; }
     nav.navbar ul.nav li {
       text-align: center;
-      width: 100px;
+      min-width: 115px;
       border-left: 1px solid rgba(255, 255, 255, 0.2); }
       nav.navbar ul.nav li:last-child {
         border-right: 1px solid rgba(255, 255, 255, 0.2); }
@@ -51,6 +48,7 @@ nav.scrolled {
   background-color: #1E1E20;
   border: none; }
   nav.scrolled ul.nav li {
+    min-width: 115px;
     border-left: 1px solid #374140; }
     nav.scrolled ul.nav li:last-child {
       border-right: 1px solid #374140; }
@@ -178,11 +176,9 @@ nav.scrolled {
   float: none;
   margin: 0 auto;
   width: 80%;
-  padding: 100px 0; }
-  .icons h2#icon-header {
-    font-size: 60px;
-    margin-bottom: 40px;
-    font-weight: 200; }
+  padding: 80px 0; }
+  .icons .section-header {
+    margin-bottom: 40px; }
   .icons figure h2 {
     letter-spacing: -1px;
     font-size: 30px;
@@ -194,16 +190,14 @@ nav.scrolled {
   .icons figure img {
     width: 70%;
     height: auto;
-    border-radius: 100%; }
+    border-radius: 100%;
+    padding: 20px; }
   .icons figure.one img {
-    background-color: #6f9280;
-    padding: 20px 30px 20px 20px; }
+    background-color: #6f9280; }
   .icons figure.two img {
-    background-color: #3E606F;
-    padding: 20px 20px 20px 30px; }
+    background-color: #3E606F; }
   .icons figure.three img {
-    background-color: #193441;
-    padding: 27px 27px 27px 30px; }
+    background-color: #193441; }
   .icons figure p {
     opacity: 0;
     -webkit-transform: translateY(40px);
@@ -236,44 +230,69 @@ nav.scrolled {
   padding: 27px 27px 27px 30px;
 }
  */
-.strategy {
+#strategy {
   padding: 80px;
   background: #3E606F;
   color: white;
   height: 670px; }
-  .strategy #accordion {
+  #strategy #accordion {
     width: 50%;
     float: left; }
-    .strategy #accordion .panel-default {
+    #strategy #accordion .panel-default {
       background: none;
       border: none;
       box-shadow: none; }
-      .strategy #accordion .panel-default .panel-heading {
+      #strategy #accordion .panel-default .panel-heading {
         background: none; }
-        .strategy #accordion .panel-default .panel-heading a {
+        #strategy #accordion .panel-default .panel-heading a {
           margin-left: 35px;
           font-size: 30px;
           text-decoration: none;
           color: #D5D5E3; }
-          .strategy #accordion .panel-default .panel-heading a:hover, .strategy #accordion .panel-default .panel-heading a:focus {
+          #strategy #accordion .panel-default .panel-heading a:hover, #strategy #accordion .panel-default .panel-heading a:focus {
             color: #08E900; }
-      .strategy #accordion .panel-default .panel-body {
+      #strategy #accordion .panel-default .panel-body {
         border-top-color: #08E900; }
-        .strategy #accordion .panel-default .panel-body text {
+        #strategy #accordion .panel-default .panel-body text {
           font-weight: 200; }
-    .strategy #accordion h2 {
+    #strategy #accordion h2 {
       font-size: 55px;
       font-weight: 200;
       letter-spacing: -2px; }
-  .strategy .strategy-image img {
+  #strategy .strategy-image img {
     margin-top: 60px;
     max-width: 500px; }
 
+#services .section-header {
+  margin-top: 80px; }
+#services .services-table {
+  width: 80%;
+  margin-left: 10%; }
+  #services .services-table ul li {
+    text-align: center; }
+    #services .services-table ul li h4 {
+      height: 40px;
+      margin: 50px auto;
+      font-weight: 100; }
+
+#team {
+  background-color: #3E606F; }
+
+section {
+  min-height: 400px;
+  width: 100%; }
+
+.section-header {
+  font-size: 60px;
+  font-weight: 200; }
+
+ul {
+  list-style-type: none; }
+
+html, body {
+  font-family: 'Roboto Condensed', sans-serif; }
+
 .hide {
   display: none; }
-
-.container.main-content {
-  width: 100%;
-  padding: 0; }
 
 /*# sourceMappingURL=site.css.map */
