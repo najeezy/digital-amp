@@ -1,8 +1,25 @@
 @mixin transition($args...) {
-  -webkit-transition: $args;
-     -moz-transition: $args;
-       -o-transition: $args;
-          transition: $args;
+  $new-args: "";
+  @each $thing in $args {
+    @if str-index("#{$thing}", "transform") == 1 {
+      $new-args: set-nth($args, 1, "-webkit-#{$thing}");
+    }
+  }
+  -webkit-transition: #{$new-args};
+  @each $thing in $args {
+    @if str-index("#{$thing}", "transform") == 1 {
+      $new-args: set-nth($args, 1, "-moz-#{$thing}");
+    }
+  }
+  -moz-transition: #{$new-args};
+
+  @each $thing in $args {
+    @if str-index("#{$thing}", "transform") == 1 {
+      $new-args: set-nth($args, 1, "-o-#{$thing}");
+    }
+  }
+  -o-transition: #{$new-args};
+  transition: $args;
 }
 
 @mixin background-gradient($args...) {
@@ -14,10 +31,14 @@
 
 
 @mixin transform($type) {
-  -ms-transform: $type;
   -webkit-transform: $type;
+  -ms-transform: $type;
   -moz-transform: $type;
   transform: $type;
+}
+
+@function transform-variable($seconds) {
+  @return (#{-webkit-transform $seconds})
 }
 
 

@@ -43,7 +43,7 @@ html
         h2
           span A
           | dvertising
-        text. 
+        p.
           We communicate the right message via search engine optimization,
           mobile, email, blogs and social media in text and video.
       figure.col-md-4.text-center.two
@@ -51,7 +51,7 @@ html
         h2
           span M
           | arketing
-        text.
+        p.
           We create and distribute valuable, relevant and consistent content 
           to attract and acquire a clearly defined audience – with the goal 
           of driving profitable customer action.
@@ -60,48 +60,57 @@ html
         h2 
           span P
           | romotions
-        text.
+        p.
           We build campaigns around the elements that make your business unique.
           You provide us the tools for your product or service and we do the rest.
     
     section#strategy.strategy.row
-      
-      div.content.col-md-6
+
+      div.panel-group#accordion(role="tablist", aria-multiselectable="true")
         h2 Our Strategy
-        ul
-          li 
-            i.fa.fa-angle-double-right
-            h3 Quality
-            text.hide. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat.
-          li 
-            i.fa.fa-angle-double-right
-            h3 Research
-            text.hide. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat.
-          li 
-            i.fa.fa-angle-double-right
-            h3 Language
-            text.hide. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat.
-          li 
-            i.fa.fa-angle-double-right
-            h3 Engagement
-            text.hide. Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-              nisi ut aliquip ex ea commodo consequat.
-            
+        div.panel.panel-default
+          div.panel-heading(role="tab", id="headingOne")
+            h4.panel-title
+              a(data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne")
+                | Quality
+
+          div#collapseOne.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingOne")
+            div.panel-body
+              text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+        div.panel.panel-default
+          div.panel-heading#headingTwo(role="tab")
+            h4.panel-title
+              a.collapsed(data-toggle="collapse", data-parent="#accordion", href="#collapseTwo", aria-expanded="false", aria-controls="collapseTwo")
+                | Research
+
+          div#collapseTwo.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingTwo")
+            div.panel-body
+              text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+        div.panel.panel-default
+          div#headingThree.panel-heading(role="tab")
+            h4.panel-title
+              a.collapsed(data-toggle="collapse", data-parent="#accordion", href="#collapseThree", aria-expanded="false", aria-controls="collapseThree")
+                | Language
+
+          div#collapseThree.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingThree")
+            div.panel-body
+              text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+        div.panel.panel-default
+          div#headingFour.panel-heading(role="tab")
+            h4.panel-title
+              a.collapsed(data-toggle="collapse", data-parent="#accordion", href="#collapseFour", aria-expanded="false", aria-controls="collapseFour")
+                | Engagement
+
+          div#collapseFour.panel-collapse.collapse(role="tabpanel", aria-labelledby="headingFour")
+            div.panel-body
+              text Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
       div.strategy-image.col-md-6
         img(src="images/strategy.png")
 
-    
   script(src="js/vendor/jquery-1.11.2.min.js")
   script(src="js/vendor/jquery-ui.min.js")
   script(src="js/vendor/bootstrap.min.js")

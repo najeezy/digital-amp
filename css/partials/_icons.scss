@@ -13,7 +13,15 @@
   figure {
 
     h2 {
+      letter-spacing: -1px;
+      font-size: 30px;
+      font-weight: 200;
       margin-bottom: 20px;
+
+      span {
+        font-size: 40px;
+        color: $green;
+      }
     }
 
     img {
@@ -37,23 +45,15 @@
       padding: 27px 27px 27px 30px;
     }
 
-    h2 {
-      letter-spacing: -1px;
-      font-size: 30px;
-      font-weight: 200;
+    p {
+      opacity: 0;
+      @include transform(translateY(40px));
+      @include transition(transform 0.8s, opacity 0.8s);
 
-      span {
-        font-size: 40px;
-        color: $green;
+      &.shown {
+        opacity: 1;
+        @include transform(translateY(0));
       }
-    }
-
-    img {
-      width: 80%;
-      height: auto;
-      border-radius: 100%;
-      padding: 28px;
-      background-color: #225378;
     }
   }
 }
