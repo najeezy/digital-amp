@@ -1,5 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
 /* move_eye 4s linear 0s infinite alternate; */
+/* @mixin nth-of-type-transition(\$total) {
+  @for \$i from 1 through \$total {
+    &:nth-of-type(\$i) {
+      @transition:
+    }
+  }
+} */
 nav.navbar {
   background-color: transparent;
   padding: 0 20px;
@@ -269,7 +276,22 @@ nav.scrolled {
   width: 80%;
   margin-left: 10%; }
   #services .services-table ul li {
-    text-align: center; }
+    text-align: center;
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    transform: translateY(40px);
+    -webkit-transition: -webkit-transform 0.8s, opacity 0.8s;
+    -moz-transition: -moz-transform 0.8s, opacity 0.8s;
+    -o-transition: -o-transform 0.8s, opacity 0.8s;
+    transition: transform 0.8s, opacity 0.8s; }
+    #services .services-table ul li.shown {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -moz-transform: translateY(0);
+      transform: translateY(0); }
     #services .services-table ul li h4 {
       height: 40px;
       margin: 50px auto;
@@ -287,7 +309,8 @@ section {
   font-weight: 200; }
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 html, body {
   font-family: 'Roboto Condensed', sans-serif; }

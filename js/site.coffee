@@ -18,9 +18,13 @@ scrollActions = (event) ->
     $nav = $ 'nav:first'
     $nav.removeClass 'scrolled'
 
-  # Showing AMP info
+  # Showing icons info
   if $(window).scrollTop() >= 600
     $('.icons:first p').addClass 'shown'
+
+  # Showing services info
+  if $(window).scrollTop() >= 1650
+    $('#services li').addClass 'shown'
 
 scrollToSection = (event) ->
   event.preventDefault()

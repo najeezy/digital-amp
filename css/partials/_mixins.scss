@@ -37,11 +37,6 @@
   transform: $type;
 }
 
-@function transform-variable($seconds) {
-  @return (#{-webkit-transform $seconds})
-}
-
-
 @mixin animation($args...) {
   -webkit-animation: $args;
      -moz-animation: $args;
@@ -56,3 +51,11 @@
        @-o-keyframes #{$name} { @content; }
           @keyframes #{$name} { @content; }
 }
+
+/* @mixin nth-of-type-transition(\$total) {
+  @for \$i from 1 through \$total {
+    &:nth-of-type(\$i) {
+      @transition:
+    }
+  }
+} */

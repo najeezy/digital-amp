@@ -24,7 +24,10 @@
       $nav.removeClass('scrolled');
     }
     if ($(window).scrollTop() >= 600) {
-      return $('.icons:first p').addClass('shown');
+      $('.icons:first p').addClass('shown');
+    }
+    if ($(window).scrollTop() >= 1650) {
+      return $('#services li').addClass('shown');
     }
   };
 
