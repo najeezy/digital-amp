@@ -1,24 +1,17 @@
 @mixin transition($args...) {
-  $new-args: "";
+  $webkit-args: "";
+  $moz-args: "";
+  $o-args: "";
   @each $thing in $args {
     @if str-index("#{$thing}", "transform") == 1 {
-      $new-args: set-nth($args, 1, "-webkit-#{$thing}");
+      $webkit-args: set-nth($args, 1, "-webkit-#{$thing}");
+      $moz-args: set-nth($args, 1, "-moz-#{$thing}");
+      $o-args: set-nth($args, 1, "-o-#{$thing}");
     }
   }
-  -webkit-transition: #{$new-args};
-  @each $thing in $args {
-    @if str-index("#{$thing}", "transform") == 1 {
-      $new-args: set-nth($args, 1, "-moz-#{$thing}");
-    }
-  }
-  -moz-transition: #{$new-args};
-
-  @each $thing in $args {
-    @if str-index("#{$thing}", "transform") == 1 {
-      $new-args: set-nth($args, 1, "-o-#{$thing}");
-    }
-  }
-  -o-transition: #{$new-args};
+  -webkit-transition: #{$webkit-args};
+  -moz-transition: #{$moz-args};
+  -o-transition: #{$o-args};
   transition: $args;
 }
 
